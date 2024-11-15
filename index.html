@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hola</h1>
+    <header>
+        <img src="img/PHOTO-2024-11-14-17-31-44-removebg-preview.png" alt="Logo de la pagina" class ="logo">
+    </header>
+
+    <main>
+        <form id="buscador-form" action="./search-results.html" method="GET">
+            <input type="text" id="buscador" name="query" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+        <p id="mensaje" class="mensaje-error"></p>
+    </main>
+
+
+
+
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
