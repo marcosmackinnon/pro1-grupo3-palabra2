@@ -42,10 +42,9 @@ function buscarrecetas(limite) {
 
             recetas +=
             `<article>
-                <img src="${recetaLista.image}" alt="${recetaLista.name}">
-                <h2>${recetaLista.name}</h2>
+                <img src="${recetaLista.image}" alt="${recetaLista.name}" width= 24% >
+                <a href="./receta.html?idReceta=${recetaLista.name}"><h2>${recetaLista.name}</h2></a>
                 <p>Dificultad:${recetaLista.difficulty}</p>
-                <a href="./receta.html"></a> 
             </article>`  
         }
         cajaPadreRecetas.innerHTML = recetas;
@@ -55,3 +54,9 @@ function buscarrecetas(limite) {
     console.log("Error: " + error);
     })
 };
+
+document.querySelector("#botonCargar").addEventListener("click",function (event) {
+    limite += 10
+    buscarrecetas(limite)
+})
+
