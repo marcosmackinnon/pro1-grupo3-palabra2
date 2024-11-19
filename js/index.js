@@ -43,7 +43,7 @@ function buscarrecetas(limite) {
             recetas +=
             `<article>
                 <img src="${recetaLista.image}" alt="${recetaLista.name}" width= 24% >
-                <a href="./receta.html?idReceta=${recetaLista.name}"><h2>${recetaLista.name}</h2></a>
+                <a href="./receta.html?idReceta=${recetaLista.id}"><h2>${recetaLista.name}</h2></a>
                 <p>Dificultad:${recetaLista.difficulty}</p>
             </article>`  
         }
