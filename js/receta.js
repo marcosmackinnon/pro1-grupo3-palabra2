@@ -25,7 +25,7 @@ fetch(`https://dummyjson.com/recipes/${idReceta}`)
     cocina.innerText = `${data.cookTimeMinutes} minutos`; 
     imagen.src = data.image; 
     imagen.alt = `Imagen de ${data.name}`; 
-    categoria.innerHTML = `Categorias: <a href="./receta.html?idCategorias=${data.tags}"><p>${data.tags}</p></a>`
+    categoria.innerHTML = `Categorias: <a href="./category.html?idCategorias=${data.tags}"><p>${data.tags}</p></a>`
   })
   .catch(function(error) {
     console.log("Error: " + error);

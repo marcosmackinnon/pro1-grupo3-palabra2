@@ -8,3 +8,11 @@
 .recetaHome{
     width: 24%;
 }
+
+/*Categorias*/
+.categorias{
+    display: flex ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
