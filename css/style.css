@@ -248,3 +248,178 @@ p.categorias {
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* login */
+
+.formularioLogin {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.cajaFormulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.mailLogin {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #A8D77D;
+    border-radius: 5px;
+    background-color: #F8FFEF;
+    font-size: 14px;
+    color: #333;
+}
+
+.contraseñaLogin {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #A8D77D;
+    border-radius: 5px;
+    background-color: #F8FFEF;
+    font-size: 14px;
+    color: #333; 
+}
+
+.botonLogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #8CCB5E;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cajaLink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.registroLink {
+    margin-top: 15px;
+    color: #F4A261;
+    text-decoration: none;
+    background-color: #f8ffef90;
+}
+
+/* register */
+.elementosRegistro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+
+.cajaRegistro {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.cajaRegistro h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #537A5A;
+}
+
+.labelRegistro {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.mailRegistro {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #A8D77D;
+    border-radius: 5px;
+    background-color: #F8FFEF;
+    font-size: 14px;
+    color: #333;
+}
+
+.contraseñaRegistro {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #A8D77D;
+    border-radius: 5px;
+    background-color: #F8FFEF;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8CCB5E;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.terminos {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.terminos label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.error {
+    color: #F64A4A;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.yaTengo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.yaTengo a {
+    color: #F4A261;
+    text-decoration: none;
+    justify-self: center;
+}

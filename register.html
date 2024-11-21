@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="top">
+
+        <form class="buscador" id="buscador-form" action="./search-results.html" method="GET">
+            <input type="text" id="buscador" name="query" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+        <p id="mensaje" class="mensaje-error"></p>
+        <div class="cajaLogo">
+        <img class="logo" src="img/PHOTO-2024-11-14-17-31-44-removebg-preview.png" alt="Logo de la pagina" class ="logo" height="200px" width="200px">
+        </div>
+        <nav class="navegador">
+            <a class="elementoNav" href="./index.html">Home</a>
+            <a class="elementoNav" href="./categories.html">Categorías</a>
+            <a class="elementoNav" href="./login.html">Login</a>
+            <a class="elementoNav" href="./register.html">Registro</a>
+        </nav>
+       
+
+    </header>
+    <main class="elementosRegistro">
+    <div class="cajaRegistro">
+        <h1>Registrarme</h1>
+        <form action="./login.html" method="get" id="registroForm">
+            <label class="labelRegistro" for="email">Email:</label>
+            <input class="mailRegistro" type="email" id="email" name="email" placeholder="Ingrese su email">
+            <div class="error" id="emailError"></div>
+
+            <label class="labelRegistro" for="password">Contraseña:</label>
+            <input class="contraseñaRegistro" type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+            <div class="error" id="passwordError"></div>
+
+            <div class="terminos">
+                <input class="labelRegistro" type="checkbox" id="terminos" name="terminos">
+                <label class="terminos" >Acepto los Términos y Condiciones</label>
+                <div class="error" id="terminosError"></div>
+            </div>
+
+            <button type="submit">Registrar</button>
+        </form>
+        
+    </div>
+    </main>
+    
+   <div class="yaTengo">
+    <a href="./login.html">Ya tengo una cuenta</a>
+   </div>
+    
+    <footer class="pie">
+        <p class="nombres">Candelaria Barbetta, Marcos Mackinnon, Bernarda Gamboa</p> 
+     </footer>
+    <script src="./js/register.js"></script>
+</body>
+</html>
