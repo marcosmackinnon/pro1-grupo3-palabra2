@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="top">
+        <form class="buscador" id="buscador-form" action="./search-results.html" method="GET">
+            <input type="text" id="buscador" name="query" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+        <p id="mensaje" class="mensaje-error"></p>
+        <div class="cajaLogo">
+            <img class="logo" src="img/PHOTO-2024-11-14-17-31-44-removebg-preview.png" alt="Logo de la página" height="200px" width="200px">
+        </div>
+        <nav class="navegador">
+            <a class="elementoNav" href="./index.html">Home</a>
+            <a class="elementoNav" href="./categories.html">Categorías</a>
+            <a class="elementoNav" href="./login.html">Login</a>
+            <a class="elementoNav" href="./register.html">Registro</a>
+        </nav>
+    </header>
+
+    <main>
+        
+            <p class="resultadosMensaje"></p>
+            <div class="resultadosBusqueda"></div>
+
+    </main>
+
+    <footer class="pie">
+        <p class="nombres">Candelaria Barbetta, Marcos Mackinnon, Bernarda Gamboa</p>
+    </footer>
+
+    <script src="./js/search-results.js"></script>
 
 
-
-
-    <H1>hola que tal </H1>
 </body>
 </html>
