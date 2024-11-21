@@ -1,7 +1,7 @@
 /* Query String: */
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let idReceta = qsObj.get("idCategorias"); 
+let idCategorias = qsObj.get("idCategorias"); 
 
 /* Llamar a elementos del HTML: */
 let padreDetalle = document.querySelector(".padreDetalle")
@@ -23,7 +23,7 @@ fetch("https://dummyjson.com/recipes")
      
       let perteneceACategoria = false;
       for (let j = 0; j < receta.tags.length; j++) {
-        if (receta.tags[j] === idCategoria) {
+        if (receta.tags[j] === idCategorias) {
           perteneceACategoria = true;
           break;
         }
@@ -43,7 +43,7 @@ fetch("https://dummyjson.com/recipes")
    
     padreDetalle.innerHTML = listaPorCategoria;
  
-    categoryDetalle.innerText =`Categoría: ${idCategoria}`
+    categoryDetalle.innerText =`Categoría: ${idCategorias}`
   })
   .catch(error => {
     console.error("Error al obtener las recetas:", error);

@@ -6,45 +6,51 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="img/PHOTO-2024-11-14-17-31-44-removebg-preview.png" alt="Logo de la pagina" class ="logo">
+    <header class="top">
 
-        <form id="buscador-form" action="./search-results.html" method="GET">
+        <form class="buscador" id="buscador-form" action="./search-results.html" method="GET">
             <input type="text" id="buscador" name="query" placeholder="Buscar..." required>
             <button type="submit">Buscar</button>
         </form>
         <p id="mensaje" class="mensaje-error"></p>
-
-        <nav>
-            <a href="">Home</a>
-            <a href="./categories.html">Categorías</a>
-            <a href="">Login</a>
-            <a href="">Registro</a>
+        <div class="cajaLogo">
+        <img class="logo" src="img/PHOTO-2024-11-14-17-31-44-removebg-preview.png" alt="Logo de la pagina" class ="logo" height="200px" width="200px">
+        </div>
+        <nav class="navegador">
+            <a class="elementoNav" href="./index.html">Home</a>
+            <a class="elementoNav" href="./categories.html">Categorías</a>
+            <a class="elementoNav" href="">Login</a>
+            <a class="elementoNav" href="">Registro</a>
         </nav>
        
 
     </header>
 
     <main>
-        <h1>El rincón del chef</h1>
+        <h1 class="titulo">El rincón del chef</h1>
         <section class="cajaPadreRecetas">
-            <article class="recetaHome">
-            </article>
+            
         </section>
 
-    
-    <button type="button" name="boton" id="botonCargar" value="enviar">Cargar mas</button>
-    
+    <div class="cajaBoton">
+    <button class="botonCargar" type="button" name="boton" id="botonCargar" value="enviar">Cargar mas</button>
+    </div>
     </main>
 
 
 
 
-    <footer>
-       <p>Candelaria Barbetta, Marcos Mackinnon, Bernarda Gamboa</p> 
+    <footer class="pie">
+       <p class="nombres">Candelaria Barbetta, Marcos Mackinnon, Bernarda Gamboa</p> 
     </footer>
 
 

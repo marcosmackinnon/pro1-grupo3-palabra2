@@ -1,18 +1,250 @@
-.cajaPadreRecetas{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-};
-
-.recetaHome{
-    width: 24%;
+* {
+    box-sizing: border-box;
 }
 
-/*Categorias*/
-.categorias{
-    display: flex ;
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-image: url(../img/DALL·E\ 2024-11-21\ 11.08.00\ -\ A\ feminine\ and\ minimalistic\ background\ design\ for\ a\ recipe\ website\ with\ tones\ of\ lime\ green\ and\ soft\ orange.\ The\ design\ should\ include\ subtle\ floral\ a.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eaf9d9a0;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.cajaLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-height: 100px;
+    width: auto;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 400px;
+    margin: 0 20px;
+    font-family: 'Lora', serif;
+}
+
+.buscador input {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #A8D77D;
+    border-radius: 4px 0 0 4px; /* Bordes redondeados solo en la izquierda */
+    outline: none;
+    background-color: #F8FFEF;
+}
+
+.buscador button {
+    height: 40px;
+    background-color: #8CCB5E;
+    border: none;
+    color: #FFFFFF;
+    padding: 0 20px;
+    border-radius: 0 4px 4px 0; /* Bordes redondeados solo en la derecha */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal
+}
+
+.navegador {
+    display: flex;
+    gap: 15px;
+    margin: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: weight;
+    font-style: normal
+}
+
+.elementoNav {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #8CCB5E;
+    font-family: "Montserrat", sans-serif;
+    font-weight: weight;
+    font-style: normal
+}
+
+.cajaPadreRecetas article {
+    width: 22%;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #8CCB5E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #eaf9d9a0;
+}
+
+.cajaPadreRecetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.categorias {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 8px;
+    background-color: #a8d77d86;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #537A5A;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    font-family: 'Playfair Display', serif;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cajaBoton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botonCargar {
+    background-color: #F4A261;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+    justify-self: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pie {
+    background-color: #537A5A;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.nombres {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cajaPadreRecetas article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #537A5A;
+    margin-bottom: 10px;
     
+}
+
+.cajaPadreRecetas article a {
+    text-decoration: none;
+}
+
+.cajaPadreRecetas article p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+}
+ 
+/* receta */
+
+body {
+    background-color: #eaf9d996;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1.nombreReceta {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #537A5A;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p.instrucciones {
+    font-size: 18px;
+    color: #333;
+    background-color: #f8ffef81;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.coccion {
+    font-size: 16px;
+    color: #F4A261;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagenReceta {
+    display: block;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p.categorias {
+    font-size: 16px;
+    color: #F4A261;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
