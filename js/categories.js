@@ -2,21 +2,20 @@
 let categorias = document.querySelector(".categorias");
 
 
-fetch("https://dummyjson.com/recipes") 
+fetch("https://dummyjson.com/recipes/tags") 
     .then(function(response) {
         return response.json(); 
     })
     .then(function(data) {
         console.log(data);
-        let nombre = data.recipes
 
         let nuevasCategorias = "";
 
-        for (let i = 0; i < data.tags.length; i++) {
-            console.log(nombre[i].tags);
+        for (let i = 0; i < data.length; i++) {
+            let cosa = data[i];
             nuevasCategorias += `
                 <li>
-                    ${nombre[i].tags}
+                   <a href="./category.html?idCategorias=${cosa}">${cosa}</a> 
                 </li>`;
         }
 
