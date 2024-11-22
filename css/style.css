@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #eaf9d9a0;
-    color: #333;
+    color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 10px;
 }
@@ -62,7 +62,6 @@ body {
     border-radius: 0 4px 4px 0; 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal
 }
 
@@ -71,7 +70,6 @@ body {
     gap: 15px;
     margin: 0 20px;
     font-family: "Montserrat", sans-serif;
-    font-weight: weight;
     font-style: normal
 }
 
@@ -82,12 +80,11 @@ body {
     border-radius: 6px;
     background-color: #8CCB5E;
     font-family: "Montserrat", sans-serif;
-    font-weight: weight;
     font-style: normal
 }
 
 .cajaPadreRecetas article {
-    width: 22%;
+    width: 17%;
     margin: 16px;
     padding: 16px;
     border-radius: 8px;
@@ -148,7 +145,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 20px auto;
+    margin: 20px;
     justify-self: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -187,7 +184,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: black;
     line-height: 1.5;
 }
  
@@ -198,7 +195,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: black;
     line-height: 1.6;
 }
 
@@ -214,7 +211,7 @@ body {
 
 .instrucciones {
     font-size: 18px;
-    color: #333;
+    color:black;
     background-color: #f8ffef81;
     padding: 15px;
     border-radius: 8px;
@@ -232,10 +229,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.cajaImagen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .imagenReceta {
-    display: block;
     height: 400px;
-    margin: 20px auto;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -247,6 +250,14 @@ body {
     text-align: center;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.categoriasS li a{
+    font-size: 18px;
+    color: #537A5A;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 /* login */
@@ -273,7 +284,7 @@ label {
     margin-top: 10px;
     margin-bottom: 5px;
     text-align: left;
-    color: #333;
+    color: black;
 }
 
 .mailLogin {
@@ -284,7 +295,7 @@ label {
     border-radius: 5px;
     background-color: #F8FFEF;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 .contraseñaLogin {
@@ -295,7 +306,7 @@ label {
     border-radius: 5px;
     background-color: #F8FFEF;
     font-size: 14px;
-    color: #333; 
+    color:black; 
 }
 
 .botonLogin {
@@ -355,7 +366,7 @@ label {
     margin-top: 10px;
     margin-bottom: 5px;
     text-align: left;
-    color: #333;
+    color: black;
 }
 
 .mailRegistro {
@@ -366,7 +377,7 @@ label {
     border-radius: 5px;
     background-color: #F8FFEF;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 .contraseñaRegistro {
@@ -377,7 +388,7 @@ label {
     border-radius: 5px;
     background-color: #F8FFEF;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 button {
@@ -400,7 +411,7 @@ button {
 .terminos label {
     margin-left: 5px;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 .error {
@@ -489,4 +500,155 @@ button {
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
+}
+
+/*Categories*/
+.tituloCategories{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #537A5A;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    font-family: 'Playfair Display', serif;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #eaf9d9a0;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+    margin: 0;
+      
+}
+.categorias li {
+    background-color: #ffffff5e;
+    border: 1px solid #A8D77D;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+}
+
+.categorias li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #537A5A;
+}
+
+/*Category*/
+.nombreCategoria{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #537A5A;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    font-family: 'Playfair Display', serif;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.padreDetalle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.padreDetalle article {
+    background-color: #ffffff85;
+    border: 1px solid #A8D77D;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 24%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:black;
+}
+
+.padreDetalle article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.padreDetalle article h3 {
+    font-size: 18px;
+    color: #537A5A;
+    margin: 10px 0;
+}
+
+.padreDetalle article p {
+    font-size: 14px;
+    color: #8CCB5E;
+    margin: 10px 0;
+}
+
+.padreDetalle article a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #F4A261;
+    padding: 8px 16px;
+    background-color: #FFF5E3;
+    border: 1px solid #F4A261;
+    border-radius: 5px;
+}
+
+@media(max-width: 450px){
+   /*index*/
+    .cajaPadreRecetas {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cajaPadreRecetas article {
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .navegador {
+        flex-direction: column;
+    }
+
+    .elementoNav {
+        text-align: center;
+    }
+
+    body{
+        background-repeat: repeat;
+    }
+
+    /*recetas*/
+    .padreDetalle article{
+        width: 100%;
+    }
+
 }
