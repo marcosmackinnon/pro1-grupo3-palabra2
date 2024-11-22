@@ -9,7 +9,7 @@ let nombre = document.querySelector(".nombreReceta");
 let pasos = document.querySelector(".instrucciones");
 let cocina = document.querySelector(".coccion");
 let imagen = document.querySelector(".imagenReceta");
-let categoria = document.querySelector(".categorias");
+let categoria = document.querySelector(".categoriasS");
 
 
 fetch(`https://dummyjson.com/recipes/${idReceta}`)
