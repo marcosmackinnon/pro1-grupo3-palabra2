@@ -1,4 +1,9 @@
-fetch("https://dummyjson.com/recipes")
+let queryString = location.search;
+let params = new URLSearchParams(queryString);
+let terminoBusqueda = params.get("query");
+
+
+fetch(`https://dummyjson.com/recipes/search?q=${terminoBusqueda}`)
   .then(function(response) {
     return response.json();
   })
@@ -7,15 +12,11 @@ fetch("https://dummyjson.com/recipes")
     let mensajeResultados = document.querySelector(".resultadosMensaje");
     let resultados = "";
 
-    let queryString = location.search;
-    let params = new URLSearchParams(queryString);
-    let terminoBusqueda = params.get("query");
-
     mensajeResultados.innerText = `Resultados de búsqueda para: ${terminoBusqueda}`;
 
     for (let i = 0; i < data.recipes.length; i++) {
       let receta = data.recipes[i];
-      if (receta.name === terminoBusqueda) {
+      
           resultados += `
           <article>
             <img src="${receta.image}" alt="${receta.name}">
@@ -23,7 +24,7 @@ fetch("https://dummyjson.com/recipes")
             <a href="./receta.html?idReceta=${receta.id}">Ver Detalle</a>
           </article>
         `;
-      }
+  
     }
 
     if (resultados === "") {
@@ -35,3 +36,16 @@ fetch("https://dummyjson.com/recipes")
   .catch(function(error) {
     console.error("Error:", error);
   });
+
+  let buscadorForm = document.querySelector("#buscador-form");
+  let buscadorInput = document.querySelector("#buscador");
+
+  buscadorForm.addEventListener("submit", function(event) {
+    if (buscadorInput.value === "") {
+        alert("El campo no puede estar vacío.");
+        event.preventDefault(); 
+    } 
+    else if (buscadorInput.value.length < 3) {
+        alert("Debe tener al menos 3 caracteres.");
+        event.preventDefault(); 
+    }});
