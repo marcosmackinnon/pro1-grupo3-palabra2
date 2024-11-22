@@ -18,10 +18,20 @@ fetch(`https://dummyjson.com/recipes/${idReceta}`)
   })
   .then(function(data) {
     console.log(data); 
-
    
     nombre.innerText = data.name; 
-    pasos.innerText = data.instructions; 
+
+    ulLista = " ";
+    for (let i = 0; i < data.instructions.length; i++) {
+      const paso = data.instructions[i];
+      ulLista +=
+      `<li>
+        ${paso}
+      </li>`
+
+      
+    }
+    pasos.innerHTML = ulLista
     cocina.innerText = `${data.cookTimeMinutes} minutos`; 
     imagen.src = data.image; 
     imagen.alt = `Imagen de ${data.name}`; 
