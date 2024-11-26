@@ -5,7 +5,7 @@ let idCategorias = qsObj.get("idCategorias");
 let padreDetalle = document.querySelector(".padreDetalle");
 let nombreCategoria = document.querySelector(".nombreCategoria");
 
-fetch(`https://dummyjson.com/recipes`)
+fetch(`https://dummyjson.com/recipes/tag/${idCategorias}`)
   .then(function(response) {
     return response.json();
   })
