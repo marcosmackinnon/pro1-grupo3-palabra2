@@ -44,8 +44,9 @@ function buscarrecetas(limite) {
             recetas +=
             `<article>
                 <img src="${recetaLista.image}" alt="${recetaLista.name}" width= 100% >
-                <a href="./receta.html?idReceta=${recetaLista.id}"><h2>${recetaLista.name}</h2></a>
+                <h2>${recetaLista.name}</h2>
                 <p>Dificultad:${recetaLista.difficulty}</p>
+                 <a href="./receta.html?idReceta=${recetaLista.id}">Ver Detalle</a>
             </article>`  
         }
         cajaPadreRecetas.innerHTML = recetas;
