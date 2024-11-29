@@ -435,6 +435,21 @@ button {
     justify-self: center;
 }
 
+.rojo {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
+.red {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
+.colorado {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
 
 /* search-results */
 

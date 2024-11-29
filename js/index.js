@@ -1,5 +1,6 @@
 let buscadorForm = document.querySelector("#buscador-form");
 let buscadorInput = document.querySelector("#buscador");
+
 let botonCargar = document.querySelector("#botonCargar")
 let cajaPadreRecetas = document.querySelector(".cajaPadreRecetas")
 

@@ -2,21 +2,25 @@ document.querySelector("#registroForm").addEventListener("submit", function (eve
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
     let terminos = document.querySelector("#terminos").checked;
+    let rojo = document.querySelector(".rojo")
+    let red = document.querySelector(".red")
+    let colorado = document.querySelector(".colorado")
     
 
 
     if (email === "") {
-        alert("Por favor complete el campo email");
+        rojo.innerText = "Por favor complete el campo"
         event.preventDefault();
     }
 
     if (password === "") {
-        alert("Por favor complete el campo contraseña");
+       red.innerText = "Por favor complete el campo"
         event.preventDefault();
+
     }
 
     if (!terminos) {
-        alert("Debe aceptar los términos y condiciones");
+        colorado.innerText = "Por favor complete el campo"
         event.preventDefault();
     }
 });
