@@ -1,7 +1,7 @@
-document.getElementById("registroForm").addEventListener("submit", function (event) {
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let terminos = document.getElementById("terminos").checked;
+document.querySelector("#registroForm").addEventListener("submit", function (event) {
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+    let terminos = document.querySelector("#terminos").checked;
     
 
 

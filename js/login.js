@@ -2,9 +2,9 @@
 let buscadorForm = document.querySelector("#buscador-form");
 let buscadorInput = document.querySelector("#buscador");
 
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+document.querySelector("#loginForm").addEventListener("submit", function (event) {
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
 
     if (email === "") {
         alert("Por favor complete el campo email");
